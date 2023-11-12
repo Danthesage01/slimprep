@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Slim Prep Employees",
-    "slug": "Slim Prep",
+    "slug": "SlimPrep",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -23,10 +23,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.danthesage.slimprep"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e55937d5-3cee-46ed-9e5a-1a4448d88d49"
+      }
     }
   }
 }
