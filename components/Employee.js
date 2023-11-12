@@ -24,17 +24,10 @@ const Employee = ({
       <View
         style={[styles.imageContainer, { borderColor: changeColor(status) }]}
       >
-        {image ? (
-          <Image
-            source={{ url: image }}
-            style={styles.image}
-          />
-        ) : (
-          <Image
-            source={require("../assets/images/placeholder.png")}
-            style={styles.image}
-          />
-        )}
+        <Image
+          source={{ uri: image }}
+          style={styles.icon}
+        />
       </View>
       <View style={styles.infoCard}>
         <View style={styles.info}>
@@ -84,9 +77,9 @@ const styles = StyleSheet.create({
     margin: 20,
     borderColor: "#5e0acc",
   },
-  image: {
-    width: Platform.OS === "ios" ? "100%" : "auto",
-    height: Platform.OS === "ios" ? "100%" : "auto",
+  icon: {
+    width: "100%",
+    height: "100%",
   },
   infoCard: {
     width: 300,

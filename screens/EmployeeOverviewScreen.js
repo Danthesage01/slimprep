@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, ScrollView } from "react-native";
 import React from "react";
 import Employee from "../components/Employee";
 
@@ -14,7 +14,11 @@ const EmployeeOverviewScreen = ({ route }) => {
     salary: params.employeeSalary,
     level: params.employeeLevel,
   };
-  return <Employee {...employee} />;
+  return (
+    <ScrollView>
+      <Employee {...employee} />
+    </ScrollView>
+  );
 };
 
 export default EmployeeOverviewScreen;
